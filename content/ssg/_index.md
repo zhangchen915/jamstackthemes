@@ -1,4 +1,4 @@
 ---
-title: Static Site Generators
+title: 静态站
 weight: 1
 ---

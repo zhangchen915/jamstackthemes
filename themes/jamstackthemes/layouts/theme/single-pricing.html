@@ -98,9 +98,9 @@
 
                         <div class="action-buttons action-buttons-detail">
                             {{ if .Site.Params.iframe_demo }}
-                            <a class="action-button action-button-demo" data-action="demo" data-context="detail" data-name="{{ .Title }}" href="/demo{{ .RelPermalink }}">Live Demo</a>
+                            <a class="action-button action-button-demo" data-action="demo" data-context="detail" data-name="{{ .Title }}" href="/demo{{ .RelPermalink }}">预览</a>
                             {{ else }}
-                            <a class="action-button action-button-demo" data-action="demo" data-context="detail" data-name="{{ .Title }}" href="{{ .Params.demo }}">Live Demo</a>
+                            <a class="action-button action-button-demo" data-action="demo" data-context="detail" data-name="{{ .Title }}" href="{{ .Params.demo }}">预览</a>
                             {{ end }}
                             <a class="action-button action-button-get-started action-button-fill" data-action="get-started" data-context="detail" data-name="{{ .Title }}" href="#get-started">Get Started</a>
                         </div>
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="pricing-body p-2">
-                                <p class="mb-3">Download the theme as a .zip file</p>
+                                <p class="mb-3">下载主题文件</p>
                                 <ul>
                                     <li>NextJS version of theme</li>
                                     <li>No CMS, Markdown files only</li>

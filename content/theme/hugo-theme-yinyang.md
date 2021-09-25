@@ -8,6 +8,6 @@ ssg:
 cms:
   - No Cms
 date: 2018-11-08T15:41:32.000Z
-description: ' a black-white theme for Hugo.'
+description: Hugo 黑白主题
 stale: false
 ---

@@ -11,13 +11,13 @@ const {getThemeKey, getRepoName} = require('./utils');
 const {updateFrontmatter} = require('./markdown')
 const config = require('./config');
 
-if (!process.env.GITHUB_TOKEN) {
+if (!process.env.GIT_TOKEN) {
     throw new Error(
         'Cannot access Github API - environment variable "GITHUB_TOKEN" is missing'
     )
 }
 
-const token = process.env.GITHUB_TOKEN;
+const token = process.env.GIT_TOKEN;
 const axiosLimit = rateLimit(axios.create(), {maxRequests: 2, perMilliseconds: 200})
 const spinner = ora('Loading')
 

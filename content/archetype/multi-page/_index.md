@@ -1,3 +1,3 @@
 ---
-title: "Multi Page"
+title: "多页"
 ---

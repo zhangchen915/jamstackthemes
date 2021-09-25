@@ -7,7 +7,7 @@
 {{ end }}
 
 {{ define "ogmeta" }}
-    <meta property="og:title" content="{{ .Title }} Themes" />
+    <meta property="og:title" content="{{ .Title }} 主题" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:description" content="Browse {{ .Title }} themes, starters and templates.">
@@ -32,15 +32,15 @@
             <div class="intro">
                 <div class="intro-heading">
                     <div class="intro-icon"><img src="{{ .Params.icon | relURL }}" alt="{{.Title}} Logo" /></div>
-                    <h1 class="intro-title">{{ .Title }} Themes
+                    <h1 class="intro-title">{{ .Title }} 主题
                         <span class="page-number">{{ if gt $paginator.PageNumber 1 }} - Page {{ $paginator.PageNumber }}{{ end }}</span>
                         {{ if eq $paginator.PageNumber 1 }}<span class="count">(<span class="count-number">{{ $themeCount }}</span>)</span>{{ end }}
                     </h1>
                 </div>
-                <div class="intro-description"><p>Browse our list of {{ .Title }} themes, starters and templates.</p></div>
+                <div class="intro-description"><p>浏览 {{ .Title }} 主题和模板列表.</p></div>
                 <div class="intro-bar">
                     <div class="intro-breadcrumbs">{{ partial "breadcrumbs.html" . }}</div>
-                    <div class="intro-backlink"><strong>Official Website</strong> <a href="{{ .Params.official_url }}">{{  .Params.official_url }}</a></div>
+                    <div class="intro-backlink"><strong>官网</strong> <a href="{{ .Params.official_url }}">{{  .Params.official_url }}</a></div>
                 </div>
             </div>
 

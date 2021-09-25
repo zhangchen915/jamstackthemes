@@ -1,3 +1,3 @@
 ---
-title: 'Jamstack Themes'
+title: '主题之家'
 ---

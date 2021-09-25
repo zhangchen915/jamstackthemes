@@ -1,15 +1,13 @@
 ---
 title: Icarus
-github: https://github.com/digitalcraftsman/hugo-icarus-theme
-demo: https://themes.gohugo.io/theme/hugo-icarus/
-author: Digitalcraftsman
+github: https://github.com/ppoffice/hexo-theme-icarus
+demo: https://ppoffice.github.io/hexo-theme-icarus/
+author: ppoffice
 ssg:
   - Hugo
 cms:
   - No Cms
-date: 2015-10-02T18:57:45.000Z
-description: Port of Ruipeng Zhang's Hexo theme Icarus to Hugo.
-stale: true
-disabled_reason: demo url not found
-disabled: true
+date: 2021-09-02T18:57:45.000Z
+description: 一个简洁精美现代的 Hexo 主题
+stale: false
 ---

@@ -1,6 +1,6 @@
 baseURL = "/"
-languageCode = "en-us"
-title = "Jamstack Themes"
+languageCode = "ZH-cn"
+title = "主题之家"
 theme = "jamstackthemes"
 paginate = 18
 summaryLength = 10
@@ -44,11 +44,11 @@ pygmentsUseClasses = true
 
 # Main Menu
 [[menu.main]]
-	name = "New Themes"
+	name = "最新主题"
 	url = "/"
     weight = 1
 
 [[menu.main]]
-	name = "All Themes"
+	name = "全部主题"
 	url = "/theme/"
     weight = 2

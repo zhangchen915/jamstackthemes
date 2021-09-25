@@ -1,4 +1,4 @@
-{{ define "title" }}{{ $themes := (where .Site.RegularPages "Type" "theme") }}{{ $themes := (where $themes ".Params.draft" "!=" true) }}{{ $themes := (where $themes ".Params.disabled" "!=" true) }}{{ $themeCount := len $themes}}All Themes ({{ $themeCount }}){{ end }}
+{{ define "title" }}{{ $themes := (where .Site.RegularPages "Type" "theme") }}{{ $themes := (where $themes ".Params.draft" "!=" true) }}{{ $themes := (where $themes ".Params.disabled" "!=" true) }}{{ $themeCount := len $themes}}全部主题 ({{ $themeCount }}){{ end }}
 
 {{ define "header_classes" }}{{ end }}
 {{ define "body_classes" }}page-all-themes has-sidebar{{ end }}
@@ -18,16 +18,16 @@
     <div class="sidebar">
         <div class="container">
             {{ partial "filters.html" (dict "context" . "countAll" true) }}
-            {{ partial "stackbit.html" . }}
+<!--            {{ partial "stackbit.html" . }}-->
         </div>
     </div>
     <div class="main">
         <div class="container">
             <div class="intro">
                 <div class="intro-heading">
-                    <h1 class="intro-title">All Themes <span class="count">(<span class="count-number">{{ $themeCount }}</span>)</span></h1>
+                    <h1 class="intro-title">全部主题 <span class="count">(<span class="count-number">{{ $themeCount }}</span>)</span></h1>
                 </div>
-                <div class="intro-description d-none d-md-block"><p>Search hundreds of open-source Jamstack themes and find the perfect starter theme or boilerplate for your next project. Filter themes by static site generator, headless CMS and more. Sort themes by stars, last commit date or submission date.</p></div>
+                <div class="intro-description d-none d-md-block"><p>搜索数百个开源主题，为您的下一个项目找到完美的入门主题或样板。可以通过静态站点生成器、无头 CMS 等筛选主题。</p></div>
                 <div class="intro-description d-md-none"><p>Search hundreds of open-source Jamstack themes!</p></div>
             </div>
             {{ partial "sort-buttons.html" . }}
